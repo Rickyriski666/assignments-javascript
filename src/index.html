@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div
+      class="bg-slate-900 p-4 my-8 container max-w-[95%] w-[50rem] m-auto rounded-2xl"
+    >
+      <form action="#" class="px-5 py-4 bg-slate-800 rounded-2xl">
+        <div class="mb-8">
+          <div class="my-3">
+            <label
+              for="title"
+              class="block text-gray-200 text-sm font-bold my-3"
+            >
+              Title
+            </label>
+            <input
+              id="title"
+              type="text"
+              class="rounded-lg py-1 px-2 w-full border-black"
+            />
+          </div>
+          <div class="my-3">
+            <label
+              for="price"
+              class="block text-gray-200 text-sm font-bold my-3"
+            >
+              Price
+            </label>
+            <input
+              id="price"
+              type="number"
+              class="rounded-lg py-1 px-2 w-full border-black"
+            />
+          </div>
+          <div class="my-3">
+            <label
+              for="date"
+              class="block text-gray-200 text-sm font-bold my-3"
+            >
+              Date
+            </label>
+            <input
+              id="date"
+              type="date"
+              class="rounded-lg py-1 px-2 w-full border-black"
+            />
+          </div>
+        </div>
+
+        <div class="flex justify-end mb-3">
+          <div>
+            <button
+              id="submit"
+              type="submit"
+              onclick="onClick()"
+              class="bg-slate-50 rounded-2xl px-5 py-2.5 text-sm font-bold min-w-[110px]"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <ul
+      id="container-data"
+      class="bg-slate-900 p-4 mt-8 container max-w-[95%] w-[50rem] m-auto rounded-2xl"
+    >
+      <div
+        id="noData"
+        class="px-5 py-4 bg-slate-800 rounded-2xl text-white flex justify-center"
+      >
+        No Data
+      </div>
+    </ul>
+
+    <div
+      id="total-expenses"
+      class="hidden bg-slate-900 p-4 container max-w-[95%] w-[50rem] m-auto rounded-2xl"
+    >
+      <div class="bg-slate-800 px-5 py-4 rounded-2xl text-white flex">
+        <div
+          class="grow px-4 mr-2 flex justify-center items-center flex-wrap text-lg font-bold"
+        >
+          Total
+        </div>
+        <div
+          id="total-price"
+          class="flex-none mr-2 flex justify-center items-center font-bold"
+        >
+          Rp.0
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .list-data {
+    @apply bg-slate-800 px-5 py-4 rounded-2xl text-white flex mb-4;
+  }
+
+  .date {
+    @apply bg-slate-900 flex-none h-20 w-20 mr-2 border-2 border-white rounded-xl flex flex-col justify-center items-center;
+  }
+
+  .date-value {
+    @apply text-xs font-bold;
+  }
+
+  .title {
+    @apply grow h-20 w-20 px-4 mr-2 flex justify-start items-center flex-wrap;
+  }
+
+  .title-value {
+    @apply font-bold text-lg;
+  }
+
+  .price {
+    @apply flex-none h-20 w-20 mr-2 flex justify-center items-center;
+  }
+
+  .price-value {
+    @apply font-bold;
+  }
+}
